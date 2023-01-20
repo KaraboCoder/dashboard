@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #1d1d41;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: 0%;
+  background-size: auto;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  width: 320px;
+  padding-bottom: 0px;
+  padding-left: 28px;
+  padding-right: 28px;
+  height: 100vh;
+  min-width: 320px;
+}
+.logo-wrapper {
+  padding-top: 57px;
+}

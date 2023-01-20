@@ -1,4 +1,6 @@
-# Blank Scss Boilerplate for Codux
+# Dashboard Created with Codux and ReactJS
+
+## Blank Scss Boilerplate for Codux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
