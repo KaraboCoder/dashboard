@@ -12,7 +12,7 @@ export const SideMenuButton = ({ className, text, icon }: SideMenuButtonProps) =
     return (
         <div className={classNames(styles.root, className)}>
             <button className={styles.button}>
-                {LeftIcon && <LeftIcon />}
+                {LeftIcon && <img src={LeftIcon} alt="icon" />}
                 <span className={styles.text}>{text}</span>
             </button>
         </div>

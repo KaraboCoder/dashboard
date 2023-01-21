@@ -27,7 +27,7 @@ export const SideBar = ({ className }: SideBarProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles['logo-wrapper']}>
-                <Logo />
+                <img src={Logo} alt="logo" />
             </div>
             <div className={styles['top-side-buttons-wrapper']}>
                 {TopMenuItems.map((item) => (
@@ -39,20 +39,20 @@ export const SideBar = ({ className }: SideBarProps) => {
                     <SideMenuButton {...item} />
                 ))}
                 <div className={styles['theme-switcher']}>
-                    <Moon />
+                    <img src={Moon} alt="moon" />
                     <span className={styles['theme-switcher-text']}>Dark Mode</span>
                     <Switch />
                 </div>
             </div>
             <div className={styles.user}>
                 <div className={styles.avatar}>
-                    <Avatar />
+                    <img src={Avatar} alt="avatar" />
                 </div>
                 <div className={styles['user-details']}>
                     <h3>Ali Riaz</h3>
                     <p>Web Developer</p>
                 </div>
-                <DropdownIcon />
+                <img src={DropdownIcon} alt="dropdown" />
             </div>
         </div>
     );
