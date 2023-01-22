@@ -3,5 +3,7 @@ import { StatsCards } from '../../../components/stats-cards/stats-cards';
 
 export default createBoard({
     name: 'StatsCards',
-    Board: () => <StatsCards />
+    Board: () => (
+        <StatsCards title={''} value={''} percentage={''} isIncreased={false} icon={'up'} />
+    ),
 });
