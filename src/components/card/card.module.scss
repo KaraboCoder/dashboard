@@ -1,6 +1,11 @@
+$card-padding: 24px;
+
 .root {
-  min-width: 374px;
+  min-width: calc(374px - #{$card-padding * 2});
   min-height: 433px;
   border-radius: 20px;
   background-color: #1d1d41;
+  padding-left: $card-padding;
+  padding-right: $card-padding;
+  padding-top: 19px;
 }

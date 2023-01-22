@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { TobBar } from '../tob-bar/tob-bar';
 import { Card } from '../card/card';
 import { StatsCards } from '../stats-cards/stats-cards';
+import { CreditCard } from '../credit-card/credit-card';
 export interface ContentProps {
     className?: string;
 }
@@ -31,7 +32,13 @@ export const Content = ({ className }: ContentProps) => {
                     </div>
                 </div>
                 <div className={styles['content-wrapper__right']}>
-                    <Card></Card>
+                    <Card>
+                        <h3 className={styles['card-header']}>My Card</h3>
+                        <p className={styles['sub-header']}>Card Balance</p>
+                        <p className={styles.value}>$15,595.015</p>
+                        <CreditCard />
+                        <div></div>
+                    </Card>
                     <Card />
                 </div>
             </div>

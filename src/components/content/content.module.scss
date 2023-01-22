@@ -28,3 +28,25 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.card-header,
+.value {
+  font-size: 24px;
+  line-height: 32.4px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.card-header {
+  margin-bottom: 18px;
+}
+
+.value {
+  margin-bottom: 16px;
+}
+
+.sub-header {
+  font-size: 16px;
+  line-height: 21.6px;
+  color: #8c89b4;
+}

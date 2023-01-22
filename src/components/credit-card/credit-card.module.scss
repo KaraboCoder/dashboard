@@ -1,0 +1,58 @@
+$card-padding: 31px;
+$card-padding-y: 25px;
+
+.root {
+  background-image: url('../../assets/credit-card.svg');
+  height: calc(184px - #{$card-padding-y * 2});
+  width: calc(326px - #{$card-padding * 2});
+  padding: $card-padding-y $card-padding;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: auto;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #ffffff;
+}
+
+.title,
+.card-number,
+.expire-date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.54;
+}
+
+.balance {
+  font-size: 28px;
+  line-height: 35.2px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.card-number,
+.expire-date {
+  opacity: 1;
+  letter-spacing: 0.5px;
+}

@@ -2,7 +2,6 @@ import styles from './stats-cards.module.scss';
 import ArrowUp from '../../assets/icons/arrow-up.svg';
 import ArrowDown from '../../assets/icons/arrow-down.svg';
 import classNames from 'classnames';
-import { Component } from 'react';
 export interface StatsCardsProps {
     className?: string;
     title: string;
@@ -22,7 +21,7 @@ export const StatsCards = ({
 }: StatsCardsProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={classNames(styles['icon-wrapper'], icon)}>
+            <div className={classNames(styles['icon-wrapper'], styles[icon])}>
                 {icon === 'up' ? (
                     <img className={styles.icon} src={ArrowUp} alt="arrow-up" />
                 ) : (
@@ -33,7 +32,7 @@ export const StatsCards = ({
                 <p className={styles.title}>{title}</p>
                 <p className={styles.value}>{value}</p>
             </div>
-            <div className={classNames(styles.chip, isIncreased ? 'green' : 'red')}>
+            <div className={classNames(styles.chip, isIncreased ? styles['green'] : styles['red'])}>
                 <p className={styles.percentage}>{percentage}</p>
             </div>
         </div>
