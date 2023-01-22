@@ -3,8 +3,22 @@
 .content {
   background-color: #141332;
   flex: 1;
-  padding-right: 28px;
-  padding-left: 28px;
   padding-bottom: 33px;
   text-align: start;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 26px;
+}
+
+.content-wrapper__left {
+  flex: 1;
+  padding-right: 26px;
+}
+
+.content-wrapper__right {
+  div:first-child {
+    margin-bottom: 26px;
+  }
 }

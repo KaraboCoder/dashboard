@@ -25,34 +25,36 @@ const BottomMenuItems = [
 
 export const SideBar = ({ className }: SideBarProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
-            <div className={styles['logo-wrapper']}>
-                <img src={Logo} alt="logo" />
-            </div>
-            <div className={styles['top-side-buttons-wrapper']}>
-                {TopMenuItems.map((item) => (
-                    <SideMenuButton {...item} />
-                ))}
-            </div>
-            <div>
-                {BottomMenuItems.map((item) => (
-                    <SideMenuButton {...item} />
-                ))}
-                <div className={styles['theme-switcher']}>
-                    <img src={Moon} alt="moon" />
-                    <span className={styles['theme-switcher-text']}>Dark Mode</span>
-                    <Switch />
+        <div className={styles.wrapper}>
+            <div className={classNames(styles.root, className)}>
+                <div className={styles['logo-wrapper']}>
+                    <img src={Logo} alt="logo" />
                 </div>
-            </div>
-            <div className={styles.user}>
-                <div className={styles.avatar}>
-                    <img src={Avatar} alt="avatar" />
+                <div className={styles['top-side-buttons-wrapper']}>
+                    {TopMenuItems.map((item) => (
+                        <SideMenuButton {...item} />
+                    ))}
                 </div>
-                <div className={styles['user-details']}>
-                    <h3>Ali Riaz</h3>
-                    <p>Web Developer</p>
+                <div>
+                    {BottomMenuItems.map((item) => (
+                        <SideMenuButton {...item} />
+                    ))}
+                    <div className={styles['theme-switcher']}>
+                        <img src={Moon} alt="moon" />
+                        <span className={styles['theme-switcher-text']}>Dark Mode</span>
+                        <Switch />
+                    </div>
                 </div>
-                <img src={DropdownIcon} alt="dropdown" />
+                <div className={styles.user}>
+                    <div className={styles.avatar}>
+                        <img src={Avatar} alt="avatar" />
+                    </div>
+                    <div className={styles['user-details']}>
+                        <h3>Ali Riaz</h3>
+                        <p>Web Developer</p>
+                    </div>
+                    <img src={DropdownIcon} alt="dropdown" />
+                </div>
             </div>
         </div>
     );
