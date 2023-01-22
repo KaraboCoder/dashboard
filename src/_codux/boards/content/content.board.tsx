@@ -4,5 +4,5 @@ import Content_module from '../../../components/content/content.module.scss';
 
 export default createBoard({
     name: 'Content',
-    Board: () => <Content />,
+    Board: () => <Content></Content>,
 });

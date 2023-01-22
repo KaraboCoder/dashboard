@@ -1,0 +1,32 @@
+.root {
+  height: 44px;
+  width: 430px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #1d1d41;
+  padding-right: 16px;
+  padding-left: 22px;
+}
+
+.input {
+  flex: 1;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  color: #aeabd8;
+  font-size: 12px;
+  line-height: 16.2px;
+  height: inherit;
+
+  &::placeholder {
+    color: #aeabd8;
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
